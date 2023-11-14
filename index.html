@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jethro's Calculator in Plain html/js/css</title>
+  </head>
+  <body>
+    <div class="display">
+      <p id="current-display"></p>
+    </div>
+    <div class="number-container"></div>
+    <div class="function-row">
+      <button onclick="clearButton()" id="clear">CLEAR</button>
+      <button onclick="deleteButton()" id="delete">DELETE</button>
+    </div>
+    <div class="top-row">
+      <button class="numberClass">7</button>
+      <button class="numberClass">8</button>
+      <button class="numberClass">9</button>
+      <button class="functionsClass" id="multiply">x</button>
+    </div>
+    <div class="middle-row">
+      <button class="numberClass">4</button>
+      <button class="numberClass">5</button>
+      <button class="numberClass">6</button>
+      <button class="functionsClass" id="divide">/</button>
+    </div>
+    <div class="bottom-row">
+      <button class="numberClass">1</button>
+      <button class="numberClass">2</button>
+      <button class="numberClass">3</button>
+      <button class="functionsClass" id="minus">-</button>
+      <div>
+        <button id="dot">.</button>
+        <button class="numberClass" id="zero">0</button>
+        <button onclick="equals()" class="" id="equals">=</button>
+        <button class="functions" id="plus">+</button>
+      </div>
+    </div>
+    <div class="bottom-row"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
